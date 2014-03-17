@@ -7,6 +7,7 @@
 //
 
 #import "CCViewController.h"
+#import "DetailViewController.h"
 
 @interface CCViewController ()
 
@@ -24,6 +25,19 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    // ensure sender is button
+    if ([sender isKindOfClass:[UIButton class]])
+    {
+        if ([segue.destinationViewController isKindOfClass:[DetailViewController class]])
+        {
+            DetailViewController *nextUIViewController = segue.destinationViewController;
+            nextUIViewController.text = self.textField.text;
+        }
+    }
 }
 
 @end

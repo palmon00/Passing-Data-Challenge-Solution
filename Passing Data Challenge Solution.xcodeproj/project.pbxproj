@@ -21,6 +21,7 @@
 		1E47CF3C18D6C29300FEDD87 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E47CF1E18D6C29200FEDD87 /* UIKit.framework */; };
 		1E47CF4418D6C29300FEDD87 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1E47CF4218D6C29300FEDD87 /* InfoPlist.strings */; };
 		1E47CF4618D6C29300FEDD87 /* Passing_Data_Challenge_SolutionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E47CF4518D6C29300FEDD87 /* Passing_Data_Challenge_SolutionTests.m */; };
+		1E47CF5118D6C31C00FEDD87 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E47CF5018D6C31C00FEDD87 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		1E47CF4118D6C29300FEDD87 /* Passing Data Challenge SolutionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Passing Data Challenge SolutionTests-Info.plist"; sourceTree = "<group>"; };
 		1E47CF4318D6C29300FEDD87 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1E47CF4518D6C29300FEDD87 /* Passing_Data_Challenge_SolutionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Passing_Data_Challenge_SolutionTests.m; sourceTree = "<group>"; };
+		1E47CF4F18D6C31C00FEDD87 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		1E47CF5018D6C31C00FEDD87 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				1E47CF2C18D6C29200FEDD87 /* Main.storyboard */,
 				1E47CF2F18D6C29200FEDD87 /* CCViewController.h */,
 				1E47CF3018D6C29200FEDD87 /* CCViewController.m */,
+				1E47CF4F18D6C31C00FEDD87 /* DetailViewController.h */,
+				1E47CF5018D6C31C00FEDD87 /* DetailViewController.m */,
 				1E47CF3218D6C29200FEDD87 /* Images.xcassets */,
 				1E47CF2118D6C29200FEDD87 /* Supporting Files */,
 			);
@@ -253,6 +258,7 @@
 				1E47CF2B18D6C29200FEDD87 /* CCAppDelegate.m in Sources */,
 				1E47CF2718D6C29200FEDD87 /* main.m in Sources */,
 				1E47CF3118D6C29200FEDD87 /* CCViewController.m in Sources */,
+				1E47CF5118D6C31C00FEDD87 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
