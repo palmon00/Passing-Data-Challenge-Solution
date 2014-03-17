@@ -36,8 +36,14 @@
         {
             DetailViewController *nextUIViewController = segue.destinationViewController;
             nextUIViewController.text = self.textField.text;
+            nextUIViewController.delegate = self;
         }
     }
+}
+
+-(void)didUpdateText:(NSString *)text
+{
+    self.textField.text = text;
 }
 
 @end

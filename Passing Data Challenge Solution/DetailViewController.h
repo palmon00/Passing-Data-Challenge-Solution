@@ -8,10 +8,22 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DetailViewController : UIViewController
+@protocol DetailViewControllerDelegate <NSObject>
+
+-(void)didUpdateText:(NSString *)text;
+
+@end
+
+@interface DetailViewController : UIViewController <UITextFieldDelegate>
 
 @property (strong, nonatomic) NSString *text;
 
 @property (strong, nonatomic) IBOutlet UILabel *textLabel;
+
+@property (strong, nonatomic) IBOutlet UITextField *updateTextField;
+
+- (IBAction)updateButtonPressed:(UIButton *)sender;
+
+@property (weak, nonatomic) id <DetailViewControllerDelegate> delegate;
 
 @end
