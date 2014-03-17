@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "DetailViewController.h"
 
-@interface CCViewController : UIViewController <DetailViewControllerDelegate>
+@interface CCViewController : UIViewController <DetailViewControllerDelegate, UITextFieldDelegate>
 @property (strong, nonatomic) IBOutlet UITextField *textField;
 @property (strong, nonatomic) IBOutlet UIButton *button;
 

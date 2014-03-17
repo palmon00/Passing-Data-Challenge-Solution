@@ -19,6 +19,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.textField.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning
@@ -41,9 +42,20 @@
     }
 }
 
+#pragma mark - DetailViewControllerDelegate
+
 -(void)didUpdateText:(NSString *)text
 {
     self.textField.text = text;
+}
+
+
+#pragma mark - UITextFieldDelegate
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [self.textField resignFirstResponder];
+    return YES;
 }
 
 @end

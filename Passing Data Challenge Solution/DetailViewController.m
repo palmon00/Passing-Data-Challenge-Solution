@@ -59,6 +59,7 @@
 {
     self.textLabel.text = self.updateTextField.text;
     [self.delegate didUpdateText:self.updateTextField.text];
+    [self.updateTextField resignFirstResponder];
     return YES;
 }
 
